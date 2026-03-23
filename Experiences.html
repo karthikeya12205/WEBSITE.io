@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      background-color: black;
+    }
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      font-size: 3em;
+      margin: 60px 20px 40px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      font-weight: bold;
+    }
+    .experience-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    .experience-section h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+    .experience-section p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop playsinline class="background-video">
+  <source src="keyan.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<nav>
+  <ul>
+    <li><a href="Website.html">Portfolio</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Certificates and Courses.html">Certificates</a></li>
+  </ul>
+</nav>
+
+<header>Experience</header>
+
+<section class="experience-section">
+  <h2>Pharmacy Website UI with RFID</h2>
+  <p>
+    I made a website for a pharmacy interface with RFID<br>
+    Doctors can prescribe medicine in the website instead of writing in a paper.<br>
+    There will be an RFID chip which will make it easier in emergency cases for docter to find out previous prescriptions
+  </p>
+</section>
+
+</body>
+</html>

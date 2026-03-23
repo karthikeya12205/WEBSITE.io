@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      text-align: center;
+      background-color: black;
+      position: relative;
+    }
+        /* Background video styling */
+        .background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(50%); /* Darken video for better text visibility */
+        }
+    nav ul {
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    header {
+      padding: 40px 20px 20px 20px;
+      font-size: 3em;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .projects-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    .project {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin-bottom: 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.03);
+    }
+    .project h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+      color: #4CAF50;
+    }
+    .project p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .project img {
+      width: 50%; /* bigger image */
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background: #4CAF50;
+      margin: 50px 0;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop class="background-video">
+    <source src="keyan.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+
+
+<header>Projects</header>
+<nav>
+  <ul>
+    <li><a href="Website.html">Portfolio</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Experiences.html">Experiences</a></li>
+    <li><a href="Certificates and Courses.html">Courses</a></li>
+  </ul>
+</nav>
+
+
+<section class="projects-section">
+
+  
+  <div class="project">
+    <h2>LatrosFlow</h2>
+    <p><strong>About:</strong> Designed and implemented an RFID-based patient marking system for hospitals, featuring an intuitive interface for efficient patient database management and record-keeping.</p>
+    <p><strong>Tech Used:</strong> Arduino, ESP32, RFID</p>
+    <img src="forest.png" alt="LatrosFlow Project Image">
+  </div>
+
+</section>
+
+</body>
+</html>
